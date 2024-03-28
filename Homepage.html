@@ -10,13 +10,15 @@
         margin:0;
     }
     h1{
-        background-color: rgb(0, 255, 64);
-        padding:20px;
+        /* background-color: rgb(0, 255, 64); */
+        padding:40px;
         text-align: center;
         color: white;font-family: Verdana, Geneva, Tahoma, sans-serif ;
         margin-top:0px ;
         font-size:40px;
         margin-bottom:0px;
+        background-image:url(https://wallpapercave.com/wp/wp9944149.jpg);
+        background-position-x:-20px ;
     }
     nav{
         display:flex;
@@ -29,7 +31,7 @@
     }
     nav li:hover{
         background-color: white;
-
+        transition-duration:0.3s;
     }
     nav li a{
         text-decoration: none;
@@ -39,38 +41,53 @@
         display: none;
         background-color:#F7D8CF;
         position:absolute;
+        
     }
     .content :hover{
         background-color:#B5D0D6;
+        box-shadow:#917867 100px;
     }
 
    .container:hover .content{
     display: block;
+    
+   }
+   .but1{
+    padding:20px;
+    background-color: #32C555;
+    border:none;
+    border-radius:20px;
    }
 </style>
 <body>
         <h1>WEEB STORE</h1> 
             <nav>
                 <li><a href="">Home</a></li>
-                <div class="container">
-                    <li><a>Men</a></li>
-                        <div class="content">
-                            <a href="">
-                                <li><a>T-shirts</a></li>
-                                <li><a>Hoodies</a></li>
-                            </a>
-                        </div>
-                </div>
-                <div class="container">
-                    <li><a>Women</a></li>
-                        <div class="content">
-                            <a href="">
-                                <li><a>T-shirts</a></li>
-                                <li><a>Hoodies</a></li>
-                            </a>
-                        </div>
-                </div>
+                    <div class="container">
+                        <li><a>Men</a></li>
+                            <div class="content">
+                                <a>
+                                    <li><a href="https://google.com">T-shirts</a></li>
+                                    <li><a>Hoodies</a></li>
+                                </a>
+                            </div>
+                    </div>
+                    <div class="container">
+                        <li><a>Women</a></li>
+                            <div class="content">
+                                <a href="">
+                                    <li><a>T-shirts</a></li>
+                                    <li><a>Hoodies</a></li>
+                                </a>
+                            </div>
+                    </div>
                 <li><a href="">Contact us</a></li>
             </nav>
+
+            <main>
+                <div class="left">
+                    <button class="but1">Shop Now</button>
+                </div>
+            </main>
 </body>
 </html>
