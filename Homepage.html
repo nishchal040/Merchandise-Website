@@ -15,15 +15,62 @@
         text-align: center;
         color: white;font-family: Verdana, Geneva, Tahoma, sans-serif ;
         margin-top:0px ;
+        font-size:40px;
+        margin-bottom:0px;
     }
+    nav{
+        display:flex;
+        background-color:#917867;
+    }
+    nav li{
+        list-style:none;
+        font-size:20px;
+        padding:20px;   
+    }
+    nav li:hover{
+        background-color: white;
+
+    }
+    nav li a{
+        text-decoration: none;
+        color: black;
+    }
+    .content{
+        display: none;
+        background-color:#F7D8CF;
+        position:absolute;
+    }
+    .content :hover{
+        background-color:#B5D0D6;
+    }
+
+   .container:hover .content{
+    display: block;
+   }
 </style>
 <body>
         <h1>WEEB STORE</h1> 
-        <nav>
-            <li><a>Home</a></li>
-            <li><a>Men</a></li>
-            <li><a>Women</a></li>
-            <li><a>Contact us</a></li>
-        </nav>
+            <nav>
+                <li><a href="">Home</a></li>
+                <div class="container">
+                    <li><a>Men</a></li>
+                        <div class="content">
+                            <a href="">
+                                <li><a>T-shirts</a></li>
+                                <li><a>Hoodies</a></li>
+                            </a>
+                        </div>
+                </div>
+                <div class="container">
+                    <li><a>Women</a></li>
+                        <div class="content">
+                            <a href="">
+                                <li><a>T-shirts</a></li>
+                                <li><a>Hoodies</a></li>
+                            </a>
+                        </div>
+                </div>
+                <li><a href="">Contact us</a></li>
+            </nav>
 </body>
 </html>
