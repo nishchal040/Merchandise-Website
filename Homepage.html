@@ -8,26 +8,35 @@
 <style>
     body{
         margin:0;
+        background-color: beige;
     }
+   
     h1{
         
-        padding:40px;
+        padding:20px;
         text-align: center;
-        color: white;font-family: Verdana, Geneva, Tahoma, sans-serif ;
+        color: rgb(209, 98, 0);font-family:Oswald;
         margin-top:0px ;
         font-size:40px;
         margin-bottom:0px;
-        background-image:url(https://wallpapercave.com/wp/wp9944149.jpg);
-        background-position-x:-20px ;
+        background-color: white;
+        /* background-image:url(https://wallpapercave.com/wp/wp9944149.jpg);
+        background-position-x:-20px ; */
+        border: 1px solid black;
+        box-shadow: inset rgb(209, 98, 0) 0 0 0rem;
     }
+
     nav{
         display:flex;
-        background-color:#917867;
+        background-color:rgb(209, 98, 0);
+        /* box-shadow: rgb(24, 228, 6) 10px 10px 60px; */
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.479), 0px 2px 16px rgba(0, 0, 0, 0.518);
     }
     nav li{
         list-style:none;
         font-size:20px;
-        padding:20px;   
+        padding:20px;  
+        
     }
     nav li:hover{
         background-color: white;
@@ -37,6 +46,7 @@
         text-decoration: none;
         color: black;
     }
+
     .content{
         display: none;
         background-color:#F7D8CF;
@@ -52,13 +62,7 @@
     display: block;
     
    }
-   h2{
-    background-color:#BBA26C;
-    margin:0px;
-    padding:25px;
-    color:white;
-    font-family:cursive;
-   }
+
    .but1{
     padding:20px;
     background-color: #F15718;
@@ -69,6 +73,45 @@
     background-color:#CDA377;
     transition-duration: 0.2s;
    }
+
+   footer{
+        background-color: rgba(209, 98, 0, 0.841);
+        width:auto;
+        height:250px;
+        box-shadow: inset rgba(87, 45, 9, 0.841) 0 0 3rem ;
+    }
+
+    .head{
+        font-family:Verdana, Geneva, Tahoma, sans-serif; 
+        margin-left: -20px;
+        color: black;
+    }
+    img{
+        width:20px;
+        margin-right: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    h2{
+        font-family:Verdana, Geneva, Tahoma, sans-serif; 
+        margin-left:-20px;
+    }
+   .footer-content{
+        display: flex;
+        justify-content:space-evenly;
+        margin-top:200px;
+        padding-top:30px;
+    }
+    .follow ul li{
+        display: inline-block;
+        margin-top:20px;
+        list-style: none;   
+    }
+    .follow h2{
+        margin-left:0px
+    }
 </style>
 <body>
         <h1>WEEB STORE</h1> 
@@ -96,15 +139,55 @@
             </nav>
 
             <main>
-                <h2>
-                    <marquee>
-                        NEW ARRIVALS ! ! !
-                    </marquee>
-                </h2>
 
                 <div class="left">
                         <button class="but1">Shop Now</button>
                 </div>
             </main>
+
+            <footer>
+                <div class="footer-content">
+
+                    <div class="web">
+                        <h2 class="head"><a href="Homepage.html">WEEB STORE </a></h2>
+                    </div>
+
+                    <div class="contact">
+                        <ul>
+                            <h2 class="head">Contact Us</h2>
+                            <li>Email : nischal4844@gmail.com</li><br>
+                            <li>Contact Number : 8919611678</li>
+                        </ul>
+                    </div>
+
+                    <div class="privacy">
+                        <ul>
+                            <h2 class="head">Privacy</h2>
+                            <li>Privacy Policy</li><br>
+                            <li>Terms and Conditons</li><br>
+                            <li>Refund Policy</li><br>
+                        </ul>
+                    </div>
+
+                    <div class="company">
+                        <ul>
+                            <h2 class="head">Company</h2>
+                            <li>About Us</li><br>
+                            <li>Careers</li><br>
+                            <li>Community Initiatives</li><br>
+                        </ul>
+                    </div>
+                    
+                    <div class="follow">
+                        <ul>
+                            <h2>Follow Us</h2>
+                            <li><img src="facebook.png"></li>
+                            <li> <img src="linkedin.png"></li>
+                            <li> <img src="instagram.png"></li>
+                            <li> <img src="twitter.png"></li>
+                        </ul>
+                    </div>
+                </div> 
+            </footer>
 </body>
 </html>

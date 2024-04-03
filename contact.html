@@ -8,75 +8,157 @@
 <style>
     body{
         margin:0;
+        background-color: beige;
+        
+    }
+    main{
+        margin-top:-20px;
+        background-image: url("peakpx1.jpg");
+        background-size:1000px 500px; 
+        z-index:-1;
+        
     }
      h1{
         
-        padding:40px;
+        padding:20px;
         text-align: center;
         color: white;font-family: Verdana, Geneva, Tahoma, sans-serif ;
         margin-top:0px ;
         font-size:40px;
-        margin-bottom:0px;
-        background-color:#27C8A8;
+        margin-bottom:0;
+        background-color:rgb(209, 98, 0);
+        
     }
     .lab{
         text-align: center;
+        
     }
     #name{
-        border-radius:20px;
+        
         border:1px solid black;
         padding:10px;
         margin-left: 10px;
     }
     #ordno{
-        border-radius:20px;
+        
         border:1px solid black;
         padding:10px;
         margin-left: 10px;
     }
     .but{
         border:1px solid red;    
-        margin-left:750px; 
+        margin-left:225px; 
         padding:20px;
         background-color: white;
-        border-radius:20px;
+        
     }
     .but:hover{
         background-color: red;
         transition-duration:0.5s;
     }
     footer{
-        text-align: center;
-        margin-top: 50px;
+        background-color: rgba(209, 98, 0, 0.841);
+        width:auto;
+        height:250px;
+        box-shadow: inset rgba(87, 45, 9, 0.841) 0 0 3rem ;
     }
     img{
-        float:left;
-        width:150px;
+        width:20px;
+        margin-right: 20px;
     }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .footer-content{
+        display: flex;
+        justify-content:space-evenly;
+        margin-top:200px;
+        padding-top:30px;
+    }
+    h2{
+        font-family:Verdana, Geneva, Tahoma, sans-serif; 
+        margin-left:-20px;
+    }
+    .lab-content{
+        background-color:rgba(255, 255, 255, 0.593);
+        margin-right:500px;
+        margin-left: 500px;
+        padding-bottom: 30px;
+    }
+    .follow ul li{
+        display: inline-block;
+        margin-top:20px;
+        list-style: none;   
+    }
+    .follow h2{
+        margin-left:0px
+    }
+    
 </style>
 <body>
     <h1>CONTACT PAGE</h1>
     <marquee>
-    <img src="WEEB's STORE.png">
+    <!-- <img src="WEEB's STORE.png"> -->
 </marquee>
+<main>
+    <div class="lab-content">
         <div class="lab">
             <br><br><br>
-            <label>Enter Your Name: </label>
+            <b><label>Enter Your Name:</label></b> 
             <input type="text" placeholder="enter your name" id="name"><br><br><br>
         </div>
             <div class="lab">
-                <label>Enter Your Order No: </label>
+                <b><label>Enter Your Order No: </label></b>
                 <input type="text" placeholder="enter your order no" id="ordno">
             </div><br><br>
                 <div class="lab">
-                    <label>Enter Your Query: </label>
+                <b><label>Enter Your Query: </label></b>
                     <textarea placeholder="Enter Your Query" rows="9" cols="30">
                     </textarea>
                 </div><br><br>
                         <button class="but">Submit</button>
-                        <hr>
-                        <footer><b>Email : nischal4844@gmail.com</b>
+    </div>
+                        <footer>
+                            <div class="footer-content">
+                                <div class="web">
+                                    <h2><a href="Homepage.html">WEEB STORE </a></h2>
+                                </div>
+                                <div class="contact">
+                                    <ul>
+                                        <h2>Contact Us</h2>
+                                    <li>Email : nischal4844@gmail.com</li><br>
+                                    <li>Contact Number : 8919611678</li>
+                                    </ul>
+                                </div>
+                                <div class="privacy">
+                                    <ul>
+                                        <h2>Privacy</h2>
+                                        <li>Privacy Policy</li><br>
+                                        <li>Terms and Conditons</li><br>
+                                        <li>Refund Policy</li><br>
+                                    </ul>
+                                </div>
+                                <div class="company">
+                                    <ul>
+                                        <h2>Company</h2>
+                                        <li>About Us</li><br>
+                                        <li>Careers</li><br>
+                                        <li>Community Initiatives</li><br>
+                                    </ul>
+                                </div>
+                                <div class="follow">
+                                    <ul>
+                                        <h2>Follow Us</h2>
+                                        <li><img src="facebook.png"></li>
+                                        <li> <img src="linkedin.png"></li>
+                                        <li> <img src="instagram.png"></li>
+                                        <li> <img src="twitter.png"></li>
+                                    </ul>
+                                </div>
+                            </div> 
                         </footer>
+</main>
                         
             
 </body>
