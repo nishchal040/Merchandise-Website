@@ -112,6 +112,14 @@
     .follow h2{
         margin-left:0px
     }
+    .slide{
+        padding:20px;
+        border: solid black 3px;
+        text-align: center;
+    }
+    .slide img{
+        width: 350px;
+    }
 </style>
 <body>
         <h1>WEEB STORE</h1> 
@@ -139,7 +147,18 @@
             </nav>
 
             <main>
-
+                <div class="slide">
+                    <img src="hoodie-mockup1.png" id="img1">
+                </div>
+                <div class="slide">
+                    <img src="t-shirt_mockup2.png" id="img2">
+                </div>
+                <div class="slide">
+                    <img src="t-shirt mockup3.png">
+                </div>
+                <div class="slide">
+                    <img src="t-shirt mockup4.png">
+                </div>
                 <div class="left">
                         <button class="but1">Shop Now</button>
                 </div>
@@ -190,4 +209,21 @@
                 </div> 
             </footer>
 </body>
+<script>
+    var current_slide=0;
+    slideshow();
+    function slideshow(){
+        var i;
+        var x =document.getElementsByClassName("slide");
+        for(i=0;i<x.length;i++){
+            x[i].style.display="none";
+        }
+        current_slide++;
+        if(current_slide>x.length){
+            current_slide=1;
+        }
+        x[current_slide-1].style.display="block";
+        setTimeout(slideshow,2000);
+    }
+</script>
 </html>
