@@ -19,17 +19,53 @@
        
         
     }
-     h1{
-        
-        padding:20px;
-        text-align: center;
-        color: white;font-family: Verdana, Geneva, Tahoma, sans-serif ;
-        margin-top:0px ;
-        font-size:40px;
-        margin-bottom:0;
+    nav{
+        display:flex;
         background-color:rgb(209, 98, 0);
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.479), 0px 2px 16px rgba(0, 0, 0, 0.518);
+    }
+    nav li{
+        list-style:none;
+        font-size:20px;
+        padding:20px;  
         
     }
+    nav li:hover{
+        background-color: white;
+        transition-duration:0.3s;
+        
+    }
+    nav li a{
+        text-decoration: none;
+        color: black;
+    }
+    nav p{
+        font-size:30px;
+        font-weight:bolder;
+        margin-right:63%;
+        margin-left:15px;
+        margin-bottom:-3px;
+        margin-top:13px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+       
+    }
+
+    .content{
+        display: none;
+        background-color:#F7D8CF;
+        position:absolute;
+        
+    }
+    .content :hover{
+        background-color:#B5D0D6;
+        box-shadow:#917867 100px;
+    }
+
+   .container:hover .content{
+    display: block;
+    
+   }
     .lab{
         text-align: center;
         
@@ -99,10 +135,29 @@
     
 </style>
 <body>
-    <h1>CONTACT PAGE</h1>
-    <marquee>
-    <!-- <img src="WEEB's STORE.png"> -->
-</marquee>
+    <nav>
+        <p>Contact</p>
+        <li><a href="Homepage.html">Home</a></li>
+            <div class="container">
+                <li><a>Men</a></li>
+                    <div class="content">
+                        <a>
+                            <li><a href="https://google.com">T-shirts</a></li>
+                            <li><a>Hoodies</a></li>
+                        </a>
+                    </div>
+            </div>
+            <div class="container">
+                <li><a>Women</a></li>
+                    <div class="content">
+                        <a href="">
+                            <li><a>T-shirts</a></li>
+                            <li><a>Hoodies</a></li>
+                        </a>
+                    </div>
+            </div>
+        <li><a href="contact.html">Contact us</a></li>
+    </nav>
 <main>
     <div class="lab-content">
         <div class="lab">
