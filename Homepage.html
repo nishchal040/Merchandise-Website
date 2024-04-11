@@ -63,6 +63,40 @@
     
    }
 
+   .hoodie p{
+    font-size:20px;
+    text-align: center;
+    margin-top:10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #F15718;
+   }
+   .hoodie img{
+    width:300px;
+    border:solid 1px black;
+   }
+   .hoodie img:hover{
+    opacity:0.8;
+   }
+   .t-shirt p{
+    font-size:20px;
+    text-align: center;
+    margin-top:10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #F15718;
+   }
+   .t-shirt img{
+    width:300px;
+    border:solid 1px black;
+   }
+   .t-shirt img:hover{
+    opacity:0.8;
+
+   }
+   .options{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+   }
    .but1{
     padding:20px;
     background-color: #F15718;
@@ -86,7 +120,7 @@
         margin-left: -20px;
         color: black;
     }
-    img{
+    footer img{
         width:20px;
         margin-right: 20px;
     }
@@ -113,12 +147,17 @@
         margin-left:0px
     }
     .slide{
-        padding:20px;
-        border: solid black 3px;
+        padding:0;
+        margin:0;
         text-align: center;
     }
     .slide img{
-        width: 350px;
+        width:1519px;
+        margin:0;
+        padding:0;
+    }
+    .slide-back{
+        width:auto;
     }
 </style>
 <body>
@@ -147,21 +186,35 @@
             </nav>
 
             <main>
+            <div class="slide-back">
                 <div class="slide">
-                    <img src="hoodie-mockup1.png" id="img1">
+                    <img src="mok.png">
                 </div>
-                <div class="slide">
-                    <img src="t-shirt_mockup2.png" id="img2">
+                    <div class="slide">
+                        <img src="mok1.png">
+                    </div>
+                        <div class="slide">
+                            <img src="mok2.png">
+                        </div>
+                            <div class="slide">
+                                <img src="mok3.png">
+                            </div>
+            </div>
+            <br>
+            <div class="options">
+                <div class="hoodie">
+                    <img src="hoodie.png">
+                    <p>Hoodies</p>
                 </div>
-                <div class="slide">
-                    <img src="t-shirt mockup3.png">
+                <div class="t-shirt">
+                    <img src="t-shirt.png"> 
+                    <p>T-shirts</p>
                 </div>
-                <div class="slide">
-                    <img src="t-shirt mockup4.png">
-                </div>
-                <div class="left">
+            </div>
+                <!-- <div class="left">
                         <button class="but1">Shop Now</button>
-                </div>
+                </div> -->
+            
             </main>
 
             <footer>

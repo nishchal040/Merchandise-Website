@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-shirts</title>
+</head>
+<style>
+    body{
+        margin:0;
+        background-color: beige;
+    }
+   
+    nav{
+        display:flex;
+        background-color:rgb(209, 98, 0);
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.479), 0px 2px 16px rgba(0, 0, 0, 0.518);
+    }
+    nav li{
+        list-style:none;
+        font-size:20px;
+        padding:20px;  
+        
+    }
+    nav li:hover{
+        background-color: white;
+        transition-duration:0.3s;
+        
+    }
+    nav li a{
+        text-decoration: none;
+        color: black;
+    }
+    nav p{
+        font-size:30px;
+        font-weight:bolder;
+        margin-right:65%;
+        margin-left:15px;
+        margin-bottom:-3px;
+        margin-top:13px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+       
+    }
+
+    .content{
+        display: none;
+        background-color:#F7D8CF;
+        position:absolute;
+        
+    }
+    .content :hover{
+        background-color:#B5D0D6;
+        box-shadow:#917867 100px;
+    }
+
+   .container:hover .content{
+    display: block;
+    
+   }
+
+
+    footer{
+        background-color: rgba(209, 98, 0, 0.841);
+        width:auto;
+        height:250px;
+        box-shadow: inset rgba(87, 45, 9, 0.841) 0 0 3rem ;
+    }
+
+    .head{
+        font-family:Verdana, Geneva, Tahoma, sans-serif; 
+        margin-left: -20px;
+        color: black;
+    }
+    footer img{
+        width:20px;
+        margin-right: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    h2{
+        font-family:Verdana, Geneva, Tahoma, sans-serif; 
+        margin-left:-20px;
+    }
+   .footer-content{
+        display: flex;
+        justify-content:space-evenly;
+        margin-top:200px;
+        padding-top:30px;
+    }
+    .follow ul li{
+        display: inline-block;
+        margin-top:20px;
+        list-style: none;   
+    }
+    .follow h2{
+        margin-left:0px
+    }
+</style>
+<body>
+     
+            <nav>
+                <p>T-shirt</p>
+                <li><a href="Homepage.html">Home</a></li>
+                    <div class="container">
+                        <li><a>Men</a></li>
+                            <div class="content">
+                                <a>
+                                    <li><a href="https://google.com">T-shirts</a></li>
+                                    <li><a>Hoodies</a></li>
+                                </a>
+                            </div>
+                    </div>
+                    <div class="container">
+                        <li><a>Women</a></li>
+                            <div class="content">
+                                <a href="">
+                                    <li><a>T-shirts</a></li>
+                                    <li><a>Hoodies</a></li>
+                                </a>
+                            </div>
+                    </div>
+                <li><a href="contact.html">Contact us</a></li>
+            </nav>
+
+            <main>
+                <
+
+            </main>
+
+    <footer>
+        <div class="footer-content">
+
+            <div class="web">
+                <h2 class="head"><a href="Homepage.html">WEEB STORE </a></h2>
+            </div>
+
+            <div class="contact">
+                <ul>
+                    <h2 class="head">Contact Us</h2>
+                    <li>Email : nischal4844@gmail.com</li><br>
+                    <li>Contact Number : 8919611678</li>
+                </ul>
+            </div>
+
+            <div class="privacy">
+                <ul>
+                    <h2 class="head">Privacy</h2>
+                    <li>Privacy Policy</li><br>
+                    <li>Terms and Conditons</li><br>
+                    <li>Refund Policy</li><br>
+                </ul>
+            </div>
+
+            <div class="company">
+                <ul>
+                    <h2 class="head">Company</h2>
+                    <li>About Us</li><br>
+                    <li>Careers</li><br>
+                    <li>Community Initiatives</li><br>
+                </ul>
+            </div>
+            
+            <div class="follow">
+                <ul>
+                    <h2>Follow Us</h2>
+                    <li><img src="facebook.png"></li>
+                    <li> <img src="linkedin.png"></li>
+                    <li> <img src="instagram.png"></li>
+                    <li> <img src="twitter.png"></li>
+                </ul>
+            </div>
+        </div> 
+    </footer>
+</body>
+</html>
