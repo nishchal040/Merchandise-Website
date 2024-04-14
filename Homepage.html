@@ -29,13 +29,13 @@
     nav{
         display:flex;
         background-color:rgb(209, 98, 0);
-        /* box-shadow: rgb(24, 228, 6) 10px 10px 60px; */
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.479), 0px 2px 16px rgba(0, 0, 0, 0.518);
     }
     nav li{
         list-style:none;
         font-size:20px;
         padding:20px;  
+        cursor: pointer;
         
     }
     nav li:hover{
@@ -163,26 +163,27 @@
 <body>
         <h1>WEEB STORE</h1> 
             <nav>
-                <li><a href="">Home</a></li>
+                <li><a href="Homepage.html">Home</a></li>
                     <div class="container">
                         <li><a>Men</a></li>
                             <div class="content">
                                 <a>
-                                    <li><a href="https://google.com">T-shirts</a></li>
-                                    <li><a>Hoodies</a></li>
+                                    <li><a href="t-shirt.html" target="_blank">T-shirts</a></li>
+                                    <li><a href="hoodies.html" target="_blank">Hoodies</a></li>
                                 </a>
                             </div>
                     </div>
                     <div class="container">
                         <li><a>Women</a></li>
                             <div class="content">
-                                <a href="">
-                                    <li><a>T-shirts</a></li>
-                                    <li><a>Hoodies</a></li>
-                                </a>
+                                
+                                    <li><a href="t-shirt.html" target="_blank">T-shirts</a></li>
+                                    <li><a href="hoodies.html" target="_blank">Hoodies</a></li>
+                            
                             </div>
                     </div>
-                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="contact.html" target="_blank">Contact us</a></li>
+                <li><img src="shopping-cart.png" width="20px"></li>
             </nav>
 
             <main>
@@ -207,13 +208,10 @@
                     <p>Hoodies</p>
                 </div>
                 <div class="t-shirt">
-                    <img src="t-shirt.png"> 
+                    <a href="t-shirt.html"><img src="t-shirt.png"></a>
                     <p>T-shirts</p>
                 </div>
             </div>
-                <!-- <div class="left">
-                        <button class="but1">Shop Now</button>
-                </div> -->
             
             </main>
 
